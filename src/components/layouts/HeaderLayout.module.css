@@ -1,0 +1,83 @@
+:root {
+--search-height: 40px;
+--search-border-radius: 8px;
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.headerContainer {
+  display: inline-flex;
+  width: 100vw;
+  height: 60px;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  left: 0;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;                
+  padding: 10px 20px;
+  background-color: #db1b1b;
+}
+
+.searchContainer{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content{
+    width: 100vw;
+    height: 2000px;
+}
+
+.searchInput{
+    width: 300px;
+    height: var(--search-height);
+    border-radius: 0px var(--search-border-radius) var(--search-border-radius) 0px;
+    border: none;
+    padding: 0px 5px 0px 5px;
+}
+
+.searchInput:focus{
+    outline: none;
+    border: none;
+}
+
+.searchBox{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.searchButton{
+    height: var(--search-height);
+    background-color: white;
+    width: 40px;
+    border-radius: var(--search-border-radius) 0px 0px var(--search-border-radius);
+}
+
+.searchButton > button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.clearButton{
+    height: var(--search-height);
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+}

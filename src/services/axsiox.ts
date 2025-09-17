@@ -1,4 +1,5 @@
-import Axios, { AxiosRequestConfig } from "axios";
+import Axios from "axios";
+import type { AxiosRequestConfig } from "axios";
 import setAxiosHeader from "../utilities/setAxiosHeader";
 import { getRefreshToken } from "../utilities/getToken";
 
